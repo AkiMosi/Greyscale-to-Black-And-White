@@ -1,5 +1,6 @@
 from PIL import Image
 im= Image.open('img1.jpg')
+im= im.convert('L')
 pixelMap=im.load()
 img=Image.new(im.mode,im.size)
 pixelsNew=im.load()
